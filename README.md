@@ -1,6 +1,6 @@
 # My Realm of Algorithms
 
-This repository is mainly for myself to learn baisc and advanced algorithms. It is devided into two parts:
+This repository is mainly for myself to learn basic and advanced algorithms. It is devided into three parts:
 
 - note: where I write notes according to the codes, and comments.
 - src: source files.

@@ -11,12 +11,12 @@ CXXFLAGS := -Wall -Wextra -std=c++11
 all: $(OBJS)
 
 $(OBJDIRS):
-    @mkdir -p $@
+	@mkdir -p $@
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp | $(OBJDIRS)
-    $(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-    @rm -rf $(OBJDIR)
+	@rm -rf $(OBJDIR)
 
 .PHONY: all clean

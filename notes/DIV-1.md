@@ -89,3 +89,13 @@ ATOYOTA -- is a mirrored palindrome.
 Code Link: [Palindrome.cpp](../src/DIV-1/palindromes.cpp)
 
 #### Comments
+
+To judge whether the input string is a palindrome, we just need to figure out whether $s_i=s_{len-1-i}$, if does not, then this string not a palindrome. And to judge whether is a mirrored string, this program uses a global variable *rev* to stash the according mirrored character. Actually, the variable *rev* can be seen as a map between the origin character and the mirrored character, for example, rev[0] is 'A' means that 'A' is the mirrored character of the character at position 0, which is 'A' as well; and if the mirrored character is nothing, shown as a space in *rev* means the character at that position has no mirrored subject. In function *r*, if current pointed character is between 'A'/'a' and 'Z'/'z', then return the according character by indexing from *rev*, and if current character is a digit, we need to add 25 because the digit section of variable *rev* is in the tail.
+
+## Problem 4: CIRCULAR SEQUENCE
+
+***A circular string that length is $n$ has $n$ ways of presentation, each of them is a character sequence made of a clockwise traverse that begin at a certain position. Among these presentations, the one with a minimum dictionary order is called "the minimum presentation". Input a circular DNA string (contains A, G, C, and T) that length is $n(n\le 100)$, get the minimum presentation of the input DNA string.***
+
+Code Link: [Circular Sequence.cpp](../src/DIV-1/circular_sequence.cpp)
+
+#### Comments

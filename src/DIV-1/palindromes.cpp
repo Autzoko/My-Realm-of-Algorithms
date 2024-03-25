@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string  rev = "A   3  HIL JM O   2TUVWXY51SE Z  8 ";
+string rev = "A   3  HIL JM O   2TUVWXY51SE Z  8 ";
 char msg[4][32] = {
         "not a palindrome",
         "a regular palindrome",
